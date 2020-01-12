@@ -1,0 +1,32 @@
+.App {
+ 
+ .shape1 {
+  position: absolute;
+  left: -1px;
+  top: 181px;
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid rgb(255, 141, 29);
+  border-left: 60px solid rgb(255, 141, 29);
+  border-bottom: 60px solid rgb(255, 141, 29);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  z-index: 6;
+  }
+.shape2 {
+  background-color: rgb(255, 141, 29);
+  position: absolute;
+  left: 839px;
+  top: 210px;
+  width: 529px;
+  height: 363px;
+  z-index: 5;
+  border-radius: 50%;
+}
+
+
+}
+
