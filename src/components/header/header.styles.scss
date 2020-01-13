@@ -11,7 +11,7 @@
         	display: flex;
         	justify-content: flex-end;
         	align-items: center;
-
+            color: white; 
           .option{
           	padding: 15px 35px;
           	cursor: pointer;
@@ -24,9 +24,10 @@
          }
         .logo{
        	  font-size: 35px;
-       	  font-weight: 1000px;
+       	  font-weight: bold;
        	  margin-left: 140px;
        	  margin-top: 21px;
+       	  color: white;
        }  
 
 }

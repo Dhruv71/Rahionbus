@@ -31,7 +31,7 @@ import './homepage.styles.scss';
     <div className='subtext'>lorem is the most used dumy text in sublime text.<br/>But todays world is
         not about the onlysite.It's now<br/>a more than web.I hope this ismake some
         sense of<br/>online portal.</div>
-    <h2 className='findroutes'>Find Routes</h2>
+      <h2 className='findroutes'>Find Routes</h2>
      <form onSubmit={this.handelSubmit}>
       <CustomInput 
        name='source'

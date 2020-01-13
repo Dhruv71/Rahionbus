@@ -1,12 +1,12 @@
 .cardlist{
 	display: grid;
-	grid-template-columns: 350px 350px 350px;
-    grid-gap: 100px;
+	grid-template-columns: 325px 325px 325px;
+    grid-gap: 120px;
     margin-top:180px ;
 
     .card{
-        background-color: rgb(194, 203, 226);
-    	height: 520px;
+        background-color: #cfcfcf;
+    	height: 560px;
     	weight: 100px;
     	border: 1.8px solid black;
     	border-radius: 10px;
