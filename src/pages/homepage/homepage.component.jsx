@@ -58,7 +58,7 @@ import './homepage.styles.scss';
      <CardList />
      <div className='about'>
        <h1>About Us</h1>
-       <p>All Tesla vehicles are produced at its factory in Fremont, California,
+       <p>All Tesla vehicles are produced At its factory in Fremont, California,
           where the vast majority of the vehicle’s components are also made. 
           To achieve our goal of having the safest factories in the world, Tesla 
           is taking a proactive approach to safety, requiring production employees 
