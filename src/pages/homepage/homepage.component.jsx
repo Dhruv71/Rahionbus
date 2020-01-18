@@ -16,6 +16,7 @@ import './homepage.styles.scss';
    handelChange = event => {
      const {value,name} = event.target;
      this.setState({ [name] : value });
+     console.log(value);
    };
 
    handelSubmit = event => {
@@ -32,6 +33,7 @@ import './homepage.styles.scss';
         not about the<br/> onlysite.It's now a more than web.I hope this ismake some
         sense of online portal.</div>
     <h2 className='findroutes'>Find Routes</h2>
+
      <form onSubmit={this.handelSubmit}>
       <CustomInput
        name='source'
