@@ -2,8 +2,8 @@ import React from 'react';
 import CustomInput from '../../components/customInput/customInput.component';
 import CardList from '../../components/cardlist/cardlist.component';
 import './homepage.styles.scss';
- 
- class  Homepage extends React.Component { 
+
+ class  Homepage extends React.Component {
    constructor() {
     super();
 
@@ -22,7 +22,7 @@ import './homepage.styles.scss';
      event.preventDefault();
      this.setState({source : '', destination : ''})
    }
-  
+
   render () {
  	return (
  	      <div className='homepage'>
@@ -32,8 +32,9 @@ import './homepage.styles.scss';
         not about the onlysite.It's now<br/>a more than web.I hope this ismake some
         sense of<br/>online portal.</div>
       <h2 className='findroutes'>FIND ROUTES</h2>
+     console.log("changing done!");
      <form onSubmit={this.handelSubmit}>
-      <CustomInput 
+      <CustomInput
        name='source'
        type='text'
        value={this.state.source}
@@ -42,7 +43,7 @@ import './homepage.styles.scss';
        handelChange={this.handelChange}
        required
       />
-      <CustomInput 
+      <CustomInput
        name='destination'
        type='text'
        placeholder='destination'
@@ -51,7 +52,7 @@ import './homepage.styles.scss';
        handelChange={this.handelChange}
        required
       />
-      <CustomInput 
+      <CustomInput
        type='submit'
         />
      </form>
@@ -59,21 +60,21 @@ import './homepage.styles.scss';
      <div className='about'>
        <h1>About Us</h1>
        <p>All Tesla vehicles are produced At its factory in Fremont, California,
-          where the vast majority of the vehicle’s components are also made. 
-          To achieve our goal of having the safest factories in the world, Tesla 
-          is taking a proactive approach to safety, requiring production employees 
+          where the vast majority of the vehicle’s components are also made.
+          To achieve our goal of having the safest factories in the world, Tesla
+          is taking a proactive approach to safety, requiring production employees
           to participate in a multi-day training program before ever setting foot
            on the factory floor. From there, Tesla continues to provide on-the-job
-            training and track performance daily so that improvements can be made 
-            quickly. The result is that Tesla’s safety rate continues to improve 
-          is taking a proactive approach to safety, requiring production employees 
+            training and track performance daily so that improvements can be made
+            quickly. The result is that Tesla’s safety rate continues to improve
+          is taking a proactive approach to safety, requiring production employees
             while Model 3 production ramps.</p>
      </div>
     </div>
     </div>
-    
- );		
- 
+
+ );
+
  }
 }
  export default Homepage;
