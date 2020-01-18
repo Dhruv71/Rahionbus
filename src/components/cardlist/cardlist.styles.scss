@@ -1,37 +1,88 @@
+
 .cardlist{
-	display: grid;
-	grid-template-columns: 325px 325px 325px;
-    grid-gap: 120px;
-    margin-top:180px ;
+	  display: grid;
+	  grid-template-columns: 350px 350px 350px;
+    grid-gap: 100px;
+    margin-top: 250px ;
 
     .card{
         background-color: #cfcfcf;
-    	height: 560px;
-    	weight: 100px;
-    	border: 1.8px solid black;
-    	border-radius: 10px;
-        
+       	height: 560px;
+      	weight: 100px;
+    //	border: 1.8px solid black;
+      	border-radius: 12px;
+
     	.title{
-    		display: block;
+    	     	 display: block;
              color: black;
              text-align: center;
              font-weight: 85px;
              font-size: 30px;
              position: relative;
-              top: 10px;
+             top: 18px;
             }
-        .content{
 
-        	margin-top: 40px;
-        	padding: 10px;
-        	font-size: 20px; 
-        }    
-    img{ position:relative;
-    	 left: 65px;
+			  .content{
+        	margin-top: 80px;
+        	padding: 40px;
+        	font-size: 12px;
+					text-align: center;
+					font-family: Fira Sans light;
+        }
+
+	  img{
+		  	 position:relative;
+    	   left: 65px;
          margin:10px;
-         justify-content: justify; 
+				 margin-top: 30px;
+         justify-content: justify;
        }
-    
-    }
 
+			 .button{
+			   border-width: 2px;
+			   border-color: rgb(0, 0, 0);
+			   border-style: solid;
+			   border-radius: 10px;
+			   position: absolute;
+			   margin-left: -140px;
+			 	 margin-top: 255px;
+			   width: 200px;
+			   height: 52px;
+				 font-size: 18px;
+				 font-family: Fira Sans Semibold;
+
+				 &:hover{
+				  cursor: pointer;
+				  background-color: rgb(255, 141, 29);
+					border-color: rgb(255, 141, 29);
+					color: #FFFFFF;
+				 }
+
+			 }
+
+    &:hover{
+				-ms-transform: scale(1.0135);
+     -webkit-transform: scale(1.0135);
+     transform: scale(1.0135)
+	 }
+
+	    	/*	 input[type=submit]{
+				 border: 1.8px solid rgb(255, 141, 29);
+				 border-radius: 10px;
+				 height: 40px;
+				 width: 350px;
+				 font-size: 16px;
+				 margin: 10px 0;
+				 padding: 8px 20px;
+				 box-sizing: border-box;
+				 font-family: Fira Sans Light;
+
+					&:focus{
+						 outline: none;
+						 height: 40px;
+						 font-size: 16px;
+					 }
+				 }*/
+
+     }
 }

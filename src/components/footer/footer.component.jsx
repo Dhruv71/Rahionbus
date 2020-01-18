@@ -1,15 +1,15 @@
 import React from 'react';
 import CustomInput from '../customInput/customInput.component';
-import facebook from './facebook.png';
-import instagram from './instagram.png';
-import googlePlus from './google-plus.png';
-import linkedIn from './linkedin.png'; 
-import './footer.styles.scss';
+import link from './icon/facebook.png';
+import google from './icon/google+.png';
+import facebook from './icon/linkedin.png';
+import twitter from './icon/twitter.png';
+import './footer.style.scss';
+
 
 class Footer  extends React.Component {
    constructor()
    { super();
-     
      this.state = {
      	email : ''
      };
@@ -26,38 +26,40 @@ class Footer  extends React.Component {
     };
 
    render(){
-   return(  
+   return(
      <div className='footer'>
-       <div className='subScribe'>
-        <div >
-         <pre>SubScribe our site for latest update</pre>
-        </div>
-       <form  onSubmit={this.handelSubmit} >
-        <div className='form'>
-       <CustomInput
-        className='email' 
-        name='email'
-        type='email'
-        placeholder='example@xyz.com'
-        value={this.state.email}
-        handelChange={this.handelChange}
-        required />
-        <button type='submit'>SubScribe</button>
-        </div> 
-         </form>
-        </div>
-       <div className='follow'>
-          <p>Follow Us</p>
-          <div className='social'>
-            <span><img src={facebook} alt='logo'></img> Facebook</span>
-            <span><img src={instagram} alt='logo'></img>Instagram</span> 
-            <span><img src={googlePlus} alt='logo'></img> Google+</span>
-            <span><img src={linkedIn} alt='logo'></img>Linked In</span>
-          </div>
-       </div> 
+     <div className='subScribe'>
+      <div >
+       <pre>SubScribe our site for latest update</pre>
+      </div>
+     <form  onSubmit={this.handelSubmit} >
+      <div className='form'>
+     <CustomInput
+      className='email'
+      name='email'
+      type='email'
+      placeholder='  example@xyz.com'
+      value={this.state.email}
+      handelChange={this.handelChange}
+      required />
+      <button className="subbutton" type='submit'>SubScribe</button>
+      </div>
+       </form>
+      </div>
+
+       <div className='social'>
+          <img className='icon' src={facebook} alt='user' width='32px' height='32px' />
+          <span className='facebook'>Facebook</span>
+          <img className='icon' src={twitter} alt='user' width='32px' height='32px' />
+          <span className='twitter'>Twitter</span>
+          <img className='icon' src={google} alt='user' width='32px' height='32px' />
+          <span className='google+'>Google+</span>
+          <img className='icon' src={link} alt='user' width='32px' height='32px' />
+          <span className='Linkedin'>Linkedin</span>
+       </div>
      </div>
-     )
-	};
+	)
+};
 }
 
 export default Footer;

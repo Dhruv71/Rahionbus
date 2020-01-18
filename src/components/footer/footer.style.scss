@@ -1,0 +1,82 @@
+.footer{
+  padding: 0px;
+  margin: 0px;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        background-color: rgb(255, 141, 29);
+
+.subScribe{
+       padding-top: 40px;
+       margin-left: 500px;
+       pre{
+       font-family: Gotham;
+       word-spacing: 2px;
+       font-size: 20px;
+       color: white;
+       }
+
+       ::placeholder {
+         color: #e9e9e9;
+         opacity: 1; /* Firefox */
+        }
+
+       .email{
+           width: 300px;
+           height: 30px;
+           border : 1px solid white;
+           background-color: rgb(255, 141, 29);
+           border-radius:5px;
+           margin-left: 25px;
+         }
+
+      .subbutton{
+        border-style: solid;
+        border-radius: 10px;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 125px;
+        width: 100px;
+        height: 45px;
+        font-size: 12px;
+        font-family: Fira Sans Semibold;
+
+
+        &:hover{
+         cursor: pointer;
+         border-width: 2px;
+         border-color: rgb(0, 0, 0);
+         color: rgb(0,0,0);
+        }
+      }
+}
+
+
+
+
+
+      .social{
+        padding-top: 210px;
+        margin-left: -420px;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-family: Gotham Light;
+        color: rgb(255,255,255);
+        cursor: pointer;
+
+       .icon{
+         cursor: pointer;
+         font-size: 5px;
+         font-weight: 200px;
+         padding: 15px;
+
+       }
+    }
+}
+
+.social :hover{
+  color: #ffb267;
+
+}
