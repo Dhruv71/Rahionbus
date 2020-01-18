@@ -56,6 +56,7 @@ import './homepage.styles.scss';
         />
      </form>
      <CardList/>
+
      <div className='about'>
        <h1>About Us</h1>
 
