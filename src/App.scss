@@ -1,7 +1,3 @@
-.signin{
-  min-height: 100%;
-  overflow: auto;
-}
 
 .App {
 padding: 0px;
@@ -27,6 +23,7 @@ opacity: 40%;
 position:absolute;
 right: 0px;
 top: 850px;
+z-index: 1;
 }
 
 }

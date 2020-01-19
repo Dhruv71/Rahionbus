@@ -1,18 +1,17 @@
 
 .cardlist{
 	  display: grid;
-	  grid-template-columns: 350px 350px 350px;
-    grid-gap: 100px;
-    margin-top: 250px ;
+      grid-template-columns: 350px 350px 350px;
+      grid-gap: 100px;
+      margin-top: 250px ;
 
     .card{
         background-color: #cfcfcf;
+       	position: static;
        	height: 560px;
       	weight: 100px;
-
-    //	border: 1.8px solid black;
-      	border-radius: 12px;
-
+     	border-radius: 12px;
+        z-index: 10;
     	.title{
     	     	 display: block;
              color: black;

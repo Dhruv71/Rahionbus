@@ -28,9 +28,31 @@
    .findroutes{
    	 color: rgb(255, 141, 29);
             }
+       .shape1{
+  position: absolute;
+  top: 130px;
+  left: 0;
+}
+   .shape2{
+   position: absolute;
+  top: 220px;
+  right: 200px;
+  height: 510px;
+  width: 620px
+  }
 
-          }
+.shape5{
+   opacity: 50%;
+   position:absolute;
+   width: 390px;
+   height: 600px;
+   right: 0px;
+   top: 870px;
+   z-index: 1;
+   }
+        
 
+    
    .about{
       margin: 30px;
       margin-top: 130px;
@@ -50,5 +72,9 @@
          font-family: Fira Sans Semibold;
         }
      }
+
+           
+     }
+
 
 }
