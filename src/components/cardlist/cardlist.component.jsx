@@ -11,19 +11,19 @@ import pass from './pass.png';
        <div className='cardlist'>
          <div className='card'>
          <img src={ticket} alt='ticket'width='200px' height='200px'/>
-        <button class="button"> Book Tickets </button>
+        <button className="button"> Book Tickets </button>
         <span className='title'>{Cardlist[0].title}</span>
           <div className='content'>{Cardlist[0].content}</div>
         </div>
         <div className='card'>
          <img src={route} alt='route' width='200px' height='200px'/>
-         <button class="button"> Routes </button>
+         <button className="button"> Routes </button>
          <span className='title'>{Cardlist[1].title}</span>
           <div className='content'>{Cardlist[1].content}</div>
         </div>
         <div className='card'>
          <img src={pass} alt='pass' width='200px' height='200px'/>
-        <button class="button"> Bus Pass </button>
+        <button className="button"> Bus Pass </button>
          <span className='title'>{Cardlist[2].title}</span>
           <div className='content'>{Cardlist[2].content}</div>
         </div>

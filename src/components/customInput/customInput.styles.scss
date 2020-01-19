@@ -2,15 +2,19 @@
 	position: relative;
     
     input[type=submit] {
-    	border: 1.5px solid black;
+    	margin-top:15px;
+    	border: 1.5px  #ff8d1d;
 		border-radius: 10px;
 		width: 150px;
 		height: 38px;
 		background-color: rgb(255, 141, 29);
 		color: darken(black, 50);
+		font-family: Fira Sans Medium;
       &:hover{
       	cursor: pointer;
-      	background-color: gold;
+      	background-color: white;
+      	border: 1.5px solid black;
+
       }
     }
      
@@ -26,10 +30,7 @@
 		 
 		  &:focus{
 		  	outline: none;
-		  	height: 40px;
-		  	font-size: 28px;
-		  	border : 2.4px solid gold;
-		  } 
+		  	 } 
 		 }
 		 
 }

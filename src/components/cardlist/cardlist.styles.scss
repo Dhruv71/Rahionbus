@@ -9,6 +9,7 @@
         background-color: #cfcfcf;
        	height: 560px;
       	weight: 100px;
+
     //	border: 1.8px solid black;
       	border-radius: 12px;
 
@@ -26,8 +27,9 @@
         	margin-top: 80px;
         	padding: 40px;
         	font-size: 12px;
-					text-align: center;
-					font-family: Fira Sans light;
+		    text-align: center;
+		    font-family: Fira Sans;
+		    word-spacing: 2px;
         }
 
 	  img{
@@ -63,7 +65,8 @@
     &:hover{
 				-ms-transform: scale(1.0135);
      -webkit-transform: scale(1.0135);
-     transform: scale(1.0135)
+     transition:  transform scale(1.0165);
+     transition-duration: 0.25s;
 	 }
 
 	    	/*	 input[type=submit]{

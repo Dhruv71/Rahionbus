@@ -1,23 +1,28 @@
 import React from 'react';
-import Homepage from './pages/homepage/homepage.component.jsx';
+import Homepage from './pages/homepage/homepage.component';
 import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
+import SigninAndSignupPage from './pages/signIn_and_signUp_page/signIn_and_signUp_page.component';
+import {Route} from 'react-router-dom';
 import shape1 from './shape/shape1.png';
 import shape2 from './shape/shape2.png';
 import shape5 from './shape/shape5.png';
 import './App.scss';
-
-function App() {
-  return (
-    <div className="App">
-    <Header/>
-    <img src={shape1} className="shape1"/>
-     <img src={shape2} className="shape2"/>
-      <img src={shape5} className="shape5"/>
-     <Homepage/>
-     <Footer/>
-      </div>
-  );
+  
+class  App extends React.Component {
+  
+  render() {
+  	return (
+  	    <div className="App">
+         <Header/>
+        <Route exact path='/' component={Homepage} />
+        <Route path='/signin' component={SigninAndSignupPage} />
+         <Footer className='foot'/>
+       </div>
+  	
+  	);
+  }
+  
 }
 
 export default App;
