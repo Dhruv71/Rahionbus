@@ -38,7 +38,7 @@ class Footer  extends React.Component {
       className='email'
       name='email'
       type='email'
-      placeholder='  example@xyz.com'
+      placeholder='example@xyz.com'
       value={this.state.email}
       handelChange={this.handelChange}
       required />
