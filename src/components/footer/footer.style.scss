@@ -1,21 +1,20 @@
 .footer{
-      padding: 0px;
+        padding: 0px;
         margin: 0px;
         width: 100%;
-        height: 350px;
+        height: 320px;
         display: flex;
         background-color: rgb(255, 141, 29);
         justify-content: center;
 
 .subScribe{
-       margin-top: 40px; 
-       //margin-left: 500px;
+       margin-top: 40px;
        pre{
        font-family: Gotham;
        word-spacing: 2px;
        font-size: 20px;
        color: white;
-        padding:10px;
+
        }
 
        ::placeholder {
@@ -26,7 +25,7 @@
        .email{
            width: 300px;
            height: 30px;
-           border : 1px solid white;
+           border : 1.5px solid white;
            background-color: rgb(255, 141, 29);
            border-radius:5px;
            margin-left: 25px;
@@ -47,7 +46,7 @@
 
         &:hover{
          cursor: pointer;
-         border-width: 2px;
+         border-width: 1.5px;
          border-color: rgb(0, 0, 0);
          color: rgb(0,0,0);
         }
@@ -55,11 +54,8 @@
 }
 
 
-
-
-
       .social{
-        padding-top: 210px;
+        padding-top: 180px;
         margin-left: -420px;
         font-size: 15px;
         cursor: pointer;
