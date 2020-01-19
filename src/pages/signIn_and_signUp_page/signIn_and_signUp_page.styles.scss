@@ -1,5 +1,34 @@
 .SigninAndSignupPage{
           position: relative;
-          min-height: 100vh;
+          min-height: 75vh;
+          margin: 25px auto;
+          margin-top: 45px;
+          margin-bottom: 45px;
+
+        .in_up_box{
+         display: grid;
+         justify-content: center;
+         grid-template-columns: 500px 500px;
+         grid-column-gap: 50px;
+         padding: 10px;
+
+        }
+
+        .shape5{
+           opacity: 40%;
+           position:absolute;
+           width: 195px;
+           height: 300px;
+           right: 0px;
+           top: 200px;
+           z-index: 1;
+           }
+
+           .shape4{
+            position: absolute;
+            left: 0;
+            width: 203.5px;
+            height: 396px;
+            }
 
 }

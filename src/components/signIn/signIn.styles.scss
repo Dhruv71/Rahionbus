@@ -1,0 +1,98 @@
+.signinBody{
+  background-color: #cfcfcf;
+  z-index: 10;
+  height: 600px;
+  width: 500px;
+  border-radius: 12px;
+
+
+    .title{
+        margin-top: 25px;
+        text-align: center;
+        font-family: Fira Sans;
+
+      h1{
+        font-size: 38px;
+        padding-bottom: 10px;
+      }
+
+     span{
+      font-size: 12px;
+      }
+      }
+
+    .signIn{
+      height: 240px;
+      width: 220px;
+      padding: 80px 80px;
+      font-family: Fira Sans;
+
+      label{
+       padding-right: 280px;
+      }
+
+      a{
+        font-family: Fira Sans;
+        font-size: 14px;
+        text-decoration: none;
+        color: #505050;
+      }
+
+      .button{
+        border-width: 1.5px;
+        border-color: rgb(0, 0, 0);
+        border-style: solid;
+        border-radius: 10px;
+        height: 45px;
+        width: 150px;
+        float: left;
+        width: 350px;
+        font-size: 16px;
+        font-family: Fira Sans Semibold;
+        outline: none;
+        display: block;
+        margin-top: 30px;
+
+
+        &:hover{
+         cursor: pointer;
+         background-color: rgb(255, 141, 29);
+         border-color: rgb(255, 141, 29);
+         color: #FFFFFF;
+        }
+      }
+    }
+
+    .signIn input{
+      font-size: 14px;
+      font-family: Fira Sans;
+    }
+
+         .logo{
+
+           text-align: center;
+           color: #505050;
+           font-family: Fira Sans;
+
+           h1{
+             font-size: 40px;
+            }
+
+          h6{
+             font-family: Fira Sans light;
+            }
+         }
+
+          ::placeholder{
+            font-size: 14px;
+            font-family: Fira Sans;
+          }
+
+           &:hover{
+             -ms-transform: scale(1.0135);
+             -webkit-transform: scale(1.0135);
+             transition:  transform scale(1.0165);
+             transition-duration: 0.25s;
+           }
+
+}

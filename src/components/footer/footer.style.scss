@@ -6,12 +6,14 @@
         display: flex;
         background-color: rgb(255, 141, 29);
         justify-content: center;
+        cursor: default;
 
 .subScribe{
        margin-top: 40px;
+       cursor: default;
        pre{
        font-family: Gotham;
-       word-spacing: 2px;
+       word-spacing: 1px;
        font-size: 20px;
        color: white;
 
@@ -19,7 +21,7 @@
 
        ::placeholder {
          color: #e9e9e9;
-         opacity: 1; /* Firefox */
+         opacity: 0.9; /* Firefox */
         }
 
        .email{
@@ -30,7 +32,7 @@
            border-radius:5px;
            margin-left: 25px;
            margin-top: 15px;
-           outline:none; 
+           outline:none;
          }
 
       .subbutton{
@@ -56,10 +58,9 @@
 
 
       .social{
-        padding-top: 180px;
+        margin-top: 180px;
         margin-left: -420px;
         font-size: 15px;
-        cursor: pointer;
         display: flex;
         align-items: center;
         font-family: Gotham Light;
@@ -67,7 +68,7 @@
         cursor: pointer;
 
        .icon{
-         cursor: pointer;
+        // cursor: pointer;
          font-size: 5px;
          font-weight: 200px;
          padding: 15px;
@@ -78,5 +79,4 @@
 
 .social :hover{
   color: #ffb267;
-
 }

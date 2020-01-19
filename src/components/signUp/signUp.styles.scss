@@ -1,0 +1,71 @@
+.signupBody{
+     background-color: #cfcfcf;
+     z-index: 10;
+     height: 600px;
+     width: 500px;
+     border-radius: 12px;
+
+     .title{
+     margin-top: 25px;
+     text-align: center;
+     font-family: Fira Sans;
+
+      h1{
+         font-size: 38px;
+         padding-bottom: 10px;
+         }
+
+     span{
+       font-size: 12px;
+        }
+      }
+
+     .signUp{
+       height: 260px;
+       width: 220px;
+       padding: 20px 80px 40px 80px;
+       font-family: Fira Sans;
+
+       .button{
+         border-width: 1.5px;
+         border-color: rgb(0, 0, 0);
+         border-style: solid;
+         border-radius: 10px;
+         height: 45px;
+         width: 150px;
+         float: left;
+         width: 350px;
+         font-size: 16px;
+         font-family: Fira Sans Semibold;
+         outline: none;
+         display: block;
+         margin-top: 20px;
+
+         &:hover{
+          cursor: pointer;
+          background-color: rgb(255, 141, 29);
+          border-color: rgb(255, 141, 29);
+          color: #FFFFFF;
+         }
+       }
+     }
+
+     .signUp input{
+       font-size: 14px;
+       font-family: Fira Sans;
+     }
+
+     ::placeholder{
+       font-size: 14px;
+       font-family: Fira Sans;
+      }
+
+     &:hover{
+  //  box-shadow: 0 1px 10px 0 #ff8d1d;
+     -ms-transform: scale(1.0135);
+     -webkit-transform: scale(1.0135);
+     transition:  transform scale(1.0165);
+     transition-duration: 0.25s;
+     }
+
+}
