@@ -6,6 +6,7 @@ const SignUp = () => (
      <div className='signUp'>
        <h1>SIGN UP</h1>
        <span>sign up with following details</span> 
+       <form>
        <CustomInput
          type='text'
          name='First Name'
@@ -31,7 +32,8 @@ const SignUp = () => (
          name='Password'
          required
        />
-
+       <button>Sign Up</button>
+       </form>
      </div>
 	);
 
