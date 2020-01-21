@@ -57,7 +57,8 @@ class Footer  extends React.Component {
           <img className='icon' src={link} alt='user' width='32px' height='32px' />
           <span className='Linkedin'>Linkedin</span>
        </div>
-     </div>
+         
+         </div>
 	)
 };
 }
