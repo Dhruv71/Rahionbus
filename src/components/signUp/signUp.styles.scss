@@ -24,7 +24,7 @@
        height: 260px;
        width: 220px;
        padding: 20px 80px 40px 80px;
-       font-family: Fira Sans;
+       font-family: Fira Sans medium;
 
        .button{
          border-width: 1.5px;
@@ -41,7 +41,7 @@
          display: block;
          margin-top: 20px;
 
-         &:hover{
+         &:focus,&:hover{
           cursor: pointer;
           background-color: rgb(255, 141, 29);
           border-color: rgb(255, 141, 29);
@@ -54,6 +54,7 @@
        font-size: 14px;
        font-family: Fira Sans;
      }
+
 
      ::placeholder{
        font-size: 14px;
