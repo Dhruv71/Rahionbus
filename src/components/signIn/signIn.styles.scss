@@ -4,7 +4,7 @@
   height: 600px;
   width: 500px;
   border-radius: 12px;
-
+  
 
     .title{
         margin-top: 25px;
@@ -26,7 +26,37 @@
       width: 220px;
       padding: 80px 80px;
       font-family: Fira Sans medium;
+    
+     .signinEmail{
+    border: 1.8px solid rgb(255, 141, 29);
+    border-radius: 10px;
+    height: 35px;
+    width: 350px;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    outline: none;
+         &:focus{
+                border: 1.8px solid #ffd91d;
+             }
+     }
 
+     .signinPass{
+        border: 1.8px solid rgb(255, 141, 29);
+        border-radius: 10px;
+        height: 35px;
+        width: 350px;
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 8px 20px;
+        box-sizing: border-box;
+        outline: none;
+          &:focus{
+            border: 1.8px solid #ffd91d;
+             }
+         }
+       
       label{
        padding-right: 280px;
       }

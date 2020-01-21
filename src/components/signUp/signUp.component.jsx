@@ -15,6 +15,7 @@ const SignUp = () => (
 
         <label>Enter Name</label>
        <CustomInput
+         className='signupName'
          type='text'
          name='First Name'
          placeholder='First Name'
@@ -22,6 +23,7 @@ const SignUp = () => (
        />
 
         <CustomInput
+          className='signupName'
          type='text'
          name='Middle Name'
          placeholder='Middle Name'
@@ -29,6 +31,7 @@ const SignUp = () => (
        />
 
        <CustomInput
+         className='signupName'
          type='text'
          name='Last Name'
          placeholder='Last Name'
@@ -37,6 +40,7 @@ const SignUp = () => (
 
        <label>Email</label>
        <CustomInput
+       className='signupEmail'
         type='email'
         name='Email'
         placeholder='example@xyz.com'
@@ -44,6 +48,7 @@ const SignUp = () => (
        />
        <label>Password</label>
        <CustomInput
+         className='signupPass'
          type='password'
          name='Password'
          placeholder='Password'
@@ -51,6 +56,7 @@ const SignUp = () => (
        />
 
        <CustomInput
+         className='signupPass'
          type='password'
          name='confirm password'
          placeholder='Confirm password'

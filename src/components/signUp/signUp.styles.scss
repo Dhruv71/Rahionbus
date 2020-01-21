@@ -48,6 +48,49 @@
           color: #FFFFFF;
          }
        }
+       .signupPass{
+        border: 1.8px solid rgb(255, 141, 29);
+        border-radius: 10px;
+        height: 35px;
+        width: 350px;
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 8px 20px;
+        box-sizing: border-box;
+        outline: none;
+          &:focus{
+            border: 1.8px solid #ffd91d;
+             }
+         }
+       
+       .signupName{
+    border: 1.8px solid rgb(255, 141, 29);
+    border-radius: 10px;
+    height: 35px;
+    width: 350px;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    outline: none;
+         &:focus{
+                border: 1.8px solid #ffd91d;
+             }
+     }
+     .signupEmail{
+    border: 1.8px solid rgb(255, 141, 29);
+    border-radius: 10px;
+    height: 35px;
+    width: 350px;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    outline: none;
+         &:focus{
+                border: 1.8px solid #ffd91d;
+             }
+     }
      }
 
      .signUp input{

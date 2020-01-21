@@ -14,6 +14,7 @@ const SignIn = () => (
        <form>
        <label>Email</label>
        <CustomInput
+         className='signinEmail'
          type='email'
          name='email'
          //value={this.state.email}
@@ -22,17 +23,17 @@ const SignIn = () => (
         /><br/>
         <label>Password</label>
        <CustomInput
+       className='signinPass'
         type='password'
         name='password'
         placeholder="Password"
         //value={this.state.password}
         required
        />
-       </form>
-
        <a href="#" className='forgetpass'> forget password?</a>
        <button className='button'>Login</button>
-      </div>
+       </form>
+     </div>
 
       <div className='logo'>
         <h1>GSRTC</h1>

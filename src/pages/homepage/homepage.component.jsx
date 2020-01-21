@@ -37,10 +37,10 @@ import './homepage.styles.scss';
         sense of online portal.</div>
      <img src={shape1} alt='shape' className='shape1'/>
     <h2 className='findroutes'>Find Routes</h2>
-
-     <form onSubmit={this.handelSubmit}>
      <img src={shape2} alt='shape' className='shape2'/>
-      <CustomInput
+     <form onSubmit={this.handelSubmit}>
+    <CustomInput
+       className='source'
        name='source'
        type='text'
        value={this.state.source}
@@ -50,6 +50,7 @@ import './homepage.styles.scss';
        required
       />
       <CustomInput
+       className='destination'
        name='destination'
        type='text'
        placeholder='destination'
@@ -60,6 +61,7 @@ import './homepage.styles.scss';
       />
       <CustomInput
        type='submit'
+        className='found'
         />
 
      </form>
@@ -91,4 +93,4 @@ import './homepage.styles.scss';
   );
 };
 }
- export default Homepage;
+export default Homepage;

@@ -2,7 +2,7 @@
         padding: 0px;
         margin: 0px;
         width: 100%;
-        height: 320px;
+        height: 260px;
         display: flex;
         background-color: rgb(255, 141, 29);
         justify-content: center;
@@ -77,11 +77,11 @@
         font-family: Fira Sans Ultralight;
         color: rgb(255,255,255);
         cursor: pointer;
-
+        
        .icon{
         // cursor: pointer;
            margin: 10px;
-      //   padding: 15px;
+           padding: 3px;
 
        }
     }

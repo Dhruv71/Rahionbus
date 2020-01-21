@@ -28,9 +28,41 @@
          }
 
      .findroutes{
-       margin-top: 10px;
+       margin-top: 30px;
      	 color: rgb(255, 141, 29);
-              }
+      }
+
+      .found{
+      margin-top:15px;
+      border: 1.5px  #ff8d1d;
+      border-radius: 10px;
+      width: 150px;
+      height: 38px;
+      background-color: rgb(255, 141, 29);
+      color: darken(black, 50);
+      font-family: Fira Sans Medium;
+      outline: none;
+      &:hover,&:focus{
+        cursor: pointer;
+        background-color: white;
+        border: 1.5px solid black;
+      }
+    }
+
+      .source,.destination{
+    border: 1.8px solid rgb(255, 141, 29);
+    border-radius: 10px;
+    height: 35px;
+    width: 350px;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    outline: none;
+         &:focus{
+                border: 1.8px solid #ffd91d;
+             }
+     }
 
 
       .shape1{

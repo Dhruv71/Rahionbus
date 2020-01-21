@@ -1,8 +1,8 @@
 import React from 'react';
 import CustomInput from '../customInput/customInput.component';
-import link from './icon/facebook.png';
+import facebook from './icon/facebook.png';
 import google from './icon/google+.png';
-import facebook from './icon/linkedin.png';
+import link from './icon/linkedin.png';
 import twitter from './icon/twitter.png';
 import './footer.style.scss';
 
