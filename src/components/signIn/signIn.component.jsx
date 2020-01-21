@@ -30,7 +30,7 @@ const SignIn = () => (
        />
        </form>
 
-       <a href="#"> forget password?</a>
+       <a href="#" className='forgetpass'> forget password?</a>
        <button className='button'>Login</button>
       </div>
 
