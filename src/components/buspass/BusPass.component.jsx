@@ -1,11 +1,10 @@
 import React from 'react';
-import CustomInput from '../../components/customInput/customInput.component';
-import './BusPassPage.styles.scss';
+import CustomInput from '../customInput/customInput.component';
+import './BusPass.styles.scss';
 
-const BusPassPage = () => (
-     <div className='BusPassPage'>
-
-       <div className='buspassForm'>
+const BusPass = () =>
+(  
+	<div className='buspassForm'>
         <span className='buspassTitle'><h2>BUS PASS</h2></span>
        <form>
        <lable>FullName</lable>
@@ -102,7 +101,6 @@ const BusPassPage = () => (
        <button>Submit</button>
        </form>
        </div>
-     </div>
 	);
 
-export default BusPassPage;
+export default BusPass;
