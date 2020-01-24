@@ -23,7 +23,7 @@ const SignUp = () => (
        />
 
         <CustomInput
-          className='signupName'
+         className='signupName'
          type='text'
          name='Middle Name'
          placeholder='Middle Name'

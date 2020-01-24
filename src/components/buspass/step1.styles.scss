@@ -1,0 +1,169 @@
+.step1{
+  height: 585px;
+  width: 820px;
+  margin-top: 15px;
+
+    .title{
+      font-size: 22px;
+      font-family: Fira Sans Semibold;
+      text-align: center;
+    }
+
+    .form{
+        margin-top: 20px;
+
+        .fullname,.enroll,.email,.collegecode,.collegename,.branchcode,.branchname,.sem,.mobile{
+        padding: 8px 20px;
+        }
+
+       .fullname,.enroll,.email{
+         margin-top: 10px;
+         border: 1.8px solid rgb(255, 141, 29);
+         border-radius: 10px;
+         height: 35px;
+         width: 350px;
+         font-size: 16px;
+         box-sizing: border-box;
+         outline: none;
+      &:focus{
+             border: 1.8px solid #ffd91d;
+          }
+       }
+
+       .college{
+         display: grid;
+         grid-template-columns: 100px 320px 100px 50px;
+         grid-column: 4;
+         grid-gap: 10px;
+         margin-top: 10px;
+
+         .collegecode{
+              border: 1.8px solid rgb(255, 141, 29);
+              border-radius: 10px;
+              height: 35px;
+              width: 150px;
+              font-size: 16px;
+              box-sizing: border-box;
+              outline: none;
+           &:focus{
+                  border: 1.8px solid #ffd91d;
+               }
+            }
+
+         .collegename{
+              border: 1.8px solid rgb(255, 141, 29);
+              border-radius: 10px;
+              height: 35px;
+              width: 300px;
+              font-size: 16px;
+              box-sizing: border-box;
+              outline: none;
+           &:focus{
+                  border: 1.8px solid #ffd91d;
+               }
+            }
+       }
+
+       .branch{
+         display: grid;
+         grid-template-columns: 100px 320px 100px 50px;
+         grid-column: 4;
+         grid-gap: 10px;
+         margin-top: 10px;
+
+
+         .branchcode{
+              border: 1.8px solid rgb(255, 141, 29);
+              border-radius: 10px;
+              height: 35px;
+              width: 150px;
+              font-size: 16px;
+              box-sizing: border-box;
+              outline: none;
+           &:focus{
+                  border: 1.8px solid #ffd91d;
+               }
+            }
+
+         .branchname{
+              border: 1.8px solid rgb(255, 141, 29);
+              border-radius: 10px;
+              height: 35px;
+              width: 300px;
+              font-size: 16px;
+              box-sizing: border-box;
+              outline: none;
+
+           &:focus{
+                  border: 1.8px solid #ffd91d;
+               }
+            }
+       }
+
+       .sem_mob{
+         display: grid;
+         grid-template-columns: 100px 170px 100px 50px;
+         grid-column: 4;
+         grid-gap: 10px;
+         margin-top: 10px;
+
+         .sem{
+              border: 1.8px solid rgb(255, 141, 29);
+              border-radius: 10px;
+              height: 35px;
+              width: 120px;
+              font-size: 16px;
+              box-sizing: border-box;
+              outline: none;
+           &:focus{
+                  border: 1.8px solid #ffd91d;
+               }
+            }
+
+         .mobile{
+              border: 1.8px solid rgb(255, 141, 29);
+              border-radius: 10px;
+              height: 35px;
+              width: 300px;
+              font-size: 16px;
+              box-sizing: border-box;
+              outline: none;
+           &:focus{
+                  border: 1.8px solid #ffd91d;
+               }
+            }
+       }
+
+       .button{
+         border-width: 1.5px;
+         border-color: rgb(0, 0, 0);
+         border-style: solid;
+         border-radius: 10px;
+         height: 45px;
+         float: right;
+         width: 120px;
+         font-size: 16px;
+         font-family: Fira Sans Semibold;
+         outline: none;
+         display: block;
+
+         &:focus,&:hover{
+          cursor: pointer;
+          background-color: rgb(255, 141, 29);
+          border-color: rgb(255, 141, 29);
+          color: #FFFFFF;
+         }
+       }
+   }
+
+   .form input{
+     font-size: 14px;
+     font-family: Fira Sans;
+   }
+
+   ::placeholder{
+     font-size: 14px;
+     font-family: Fira Sans;
+    }
+
+}
