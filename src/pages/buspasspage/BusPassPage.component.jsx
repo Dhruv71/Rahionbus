@@ -4,11 +4,24 @@ import Step2 from '../../components/buspass/step2.component';
 import './BusPassPage.styles.scss';
 
 class BusPassPage extends React.Component {
+constructor(){
+  super();
 
-state = {
-  step : 1,
+this.state = {
+
+step : 1,
+FullName : '',
+Enrollment : '',
+CollegeName : '',
+CollegeCode : '',
+BranchName : '',
+BranchCode : '',
+Semister : '',
+Mobile : '',
+Email : '',
+EmailError : true,
 }
-
+}
 //proceed to NEXT step
 nextStep = () => {
   const { step } = this.state;
@@ -24,10 +37,17 @@ prevStep = () => {
     step : step - 1
   });
 }
-
+handleChange = name => event => {
+   this.setState({ [name] : event.target.value });
+}
   render() {
       const { step } = this.state;
-
+      const {FullName,BranchCode,BranchName,Email,CollegeName,CollegeCode,
+              Enrollment,Semister,Mobile,EmailError } = this.state;
+      const values = {FullName,BranchCode,BranchName,Email,CollegeName,CollegeCode,
+              Enrollment,Semister,Mobile,EmailError } ; 
+      console.log(FullName);
+      console.log(EmailError);  
       switch (step) {
        case 1:
                return(
@@ -35,6 +55,8 @@ prevStep = () => {
                      <div className="stepsBox">
                        <Step1
                        nextStep={ this.nextStep }
+                        values = {values}
+                        handleChange = {this.handleChange}
                        />
                     </div>
                    </div>

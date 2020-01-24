@@ -21,14 +21,20 @@
           font-family: Gotham light;
           color: rgb(255,255,255);
           color: white;
-
+          
+          .optionh{
+            margin: 15px 0;
+            font-size: 16px;
+            
+          } 
+          
           .option{
             margin: 15px 25px;
           	cursor: pointer;
           	font-size: 16px;
             word-spacing: 2px;
           }
-
+           
           .button{
             margin: 15px 25px;
             border-width: 1.2px;

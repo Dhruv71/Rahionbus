@@ -1,126 +1,128 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CustomInput from '../customInput/customInput.component';
 import './step1.styles.scss';
-
-
 export class Step1 extends React.Component{
+constructor() {
+super();
+this.state =  {
 
-	constructor() {
-	 super();
-	 this.state =  {
-		  Fullname : '',
-      Enrollment : '',
-      CollegeName : '',
-      CollegeCode : '',
-      BranchName : '',
-      BranchCode : '',
-      Semister : '',
-      Mobile : '',
-      Email : ''
-	 };
-	}
+};
+}
 
-	continue = e => {
-		e.preventDefault();
-		this.props.nextStep();
-	}
+handelSubmit = e => {
+e.preventDefault();   
+this.props.nextStep() 
+};
 
-// Hii brother ahi is handlechange nu kari deje ne
-// Hii brother ahi is handlechange nu kari deje ne
-// Hii brother ahi is handlechange nu kari deje ne
 
-   render() {
-			return (
-    	<div className='step1'>
-			<span className='title'><h2>Personal Infomation</h2></span>
-		 <form className='form' onSubmit={this.continue}>
-		 <lable>FullName</lable>
-		 <CustomInput
-			className='fullname'
-			type='text'
-			name='fullName'
-		 placeholder='Full Name'
-			required
-		 /><br/>
-		 <lable>Enrollment No.</lable>
-		 <CustomInput
-			className='enroll'
-			type='text'
-			name='Enrollment'
-		 placeholder='Enrollment No'
-			required
-		 /><br/>
+render() {
+const { handleChange,values } = this.props;
 
+return (
+    
+<div className='step1'>
+	<span className='title'><h2>Personal Infomation</h2></span>
+	<form className='form' onSubmit={this.handelSubmit}>
+		<lable>FullName</lable>
+		<CustomInput
+		className='fullname'
+		type='text'
+		name='FullName'
+		value={values.FullName}
+		onChange={handleChange('FullName')}
+		placeholder='Full Name'
+		required
+		/><br/>
+	<lable>Enrollment No.</lable>
+		<CustomInput
+		className='enroll'
+		type='text'
+		name='Enrollment'
+		value={values.Enrollment}
+		onChange={handleChange('Enrollment')}
+		placeholder='Enrollment No'
+		required
+		/><br/>
 		<div className='college'>
-		 <lable>College Name</lable>
-		 <CustomInput
+			<lable>College Name</lable>
+			<CustomInput
 			className='collegename'
 			type='text'
-			name='college'
-		 placeholder='College Name'
+			name='CollegeName'
+			value={values.CollegeName}
+			onChange={handleChange('CollegeName')}
+			placeholder='College Name'
 			required
-		 />
-		 <lable>College Code</lable>
-		 <CustomInput
+			/>
+			<lable>College Code</lable>
+			<CustomInput
 			className='collegecode'
 			type='number'
-			name='college'
-		 placeholder='College Code'
+			name='CollegeCode'
+			value={values.CollegeCode}
+			onChange={handleChange('CollegeCode')}
+			placeholder='College Code'
 			required
-		 />
+			/>
 		</div><br/>
-
 		<div className='branch'>
-		 <lable>Branch</lable>
-		 <CustomInput
+			<lable>Branch</lable>
+			<CustomInput
 			className='branchname'
 			type='text'
-			name='collegeAddress'
-		 placeholder='Branch'
+			name='BranchName'
+			value={values.BranchName}
+			onChange={handleChange('BranchName')}
+			placeholder='Branch'
 			required
-		 />
-		 <lable>Branch Code</lable>
-		 <CustomInput
+			/>
+			<lable>Branch Code</lable>
+			<CustomInput
 			className='branchcode'
 			type='number'
-			name='branchCode'
-		 placeholder='Branch Code'
+			name='BranchCode'
+			value={values.BranchCode}
+			onChange={handleChange('BranchCode')}
+			placeholder='Branch Code'
 			required
-		 />
+			/>
 		</div><br/>
-
-	 <div className='sem_mob'>
-		 <lable>Semister</lable>
-		 <CustomInput
+		<div className='sem_mob'>
+			<lable>Semister</lable>
+			<CustomInput
 			className='sem'
 			type='number'
-			name='Sem'
-		 placeholder='Semister'
+			name='Semister'
+			value={values.Semister}
+			onChange={handleChange('Semister')}
+			placeholder='Semister'
 			required
-		 />
-		 <lable>Mobile No.</lable>
-		 <CustomInput
+			/>
+     		<lable>Mobile No.</lable>
+			<CustomInput
 			className='mobile'
 			type='number'
-			name='college'
-		 placeholder='Mobile No.'
+			name='Mobile'
+			value={values.Mobile}
+			onChange={handleChange('Mobile')}
+			placeholder='Mobile No.'
 			required
-		 />
-		 </div><br/>
-
+			/>
+		</div><br/>
 		<lable>Email Address</lable>
-		 <CustomInput
-			className='email'
-			type='email'
-			name='email'
-		 placeholder='example123@gmail.com'
-			required
-		 />
-
-	 <button className="button" >Next</button>
-	 </form>
-   </div>
-	);
- }
+		<CustomInput
+		className='email'
+		type='email'
+		name='Email'
+		value={values.Email}
+		onChange={handleChange('Email')}
+		placeholder='example123@gmail.com'
+		required
+		/> 
+		<button className="button" >Next</button>
+	</form>
+</div>
+);
+}
 }
 export default Step1;

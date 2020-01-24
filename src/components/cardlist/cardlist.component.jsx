@@ -1,7 +1,7 @@
 import React from 'react';
 import './cardlist.styles.scss';
 import {Cardlist} from './cardlist_data';
-//import {Card} from '../card/card.component';
+import { Link } from 'react-router-dom';
 import ticket from './ticket.png';
 import route from './route.png';
 import pass from './pass.png';
@@ -23,7 +23,9 @@ import pass from './pass.png';
         </div>
         <div className='card'>
          <img src={pass} alt='pass' width='200px' height='200px'/>
+        <Link to='buspass'>
         <button className="button"> Bus Pass </button>
+        </Link>
          <span className='title'>{Cardlist[2].title}</span>
           <div className='content'>{Cardlist[2].content}</div>
         </div>
