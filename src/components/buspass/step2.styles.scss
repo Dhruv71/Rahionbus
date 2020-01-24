@@ -1,0 +1,134 @@
+.step2{
+
+  height: 585px;
+  width: 820px;
+  margin-top: 15px;
+
+    .title{
+      font-size: 22px;
+      font-family: Fira Sans Semibold;
+      text-align: center;
+    }
+
+    .form{
+        margin-top: 20px;
+
+      .buspassDate,.source_den,.Distance{
+        padding: 6px 20px;
+      }
+
+       [type=number]{
+         margin-top: 10px;
+         border: 1.8px solid rgb(255, 141, 29);
+         border-radius: 10px;
+         height: 35px;
+         width: 120px;
+         font-size: 16px;
+         box-sizing: border-box;
+         outline: none;
+      &:focus{
+             border: 1.8px solid #ffd91d;
+          }
+       }
+
+       .date{
+         display: grid;
+         grid-template-columns: 80px 300px 80px 300px;
+         grid-column: 4;
+         grid-gap: 10px;
+         margin-top: 10px;
+
+         .buspassDate{
+              border: 1.8px solid rgb(255, 141, 29);
+              border-radius: 10px;
+              height: 35px;
+              width: 280px;
+              font-size: 16px;
+              box-sizing: border-box;
+              outline: none;
+           &:focus{
+                  border: 1.8px solid #ffd91d;
+               }
+            }
+       }
+
+       .s_to_d{
+         display: grid;
+         grid-template-columns: 65px 300px 95px 300px;
+         grid-column: 4;
+         grid-gap: 10px;
+         margin-top: 10px;
+
+
+         .source_den{
+              border: 1.8px solid rgb(255, 141, 29);
+              border-radius: 10px;
+              height: 35px;
+              width: 280px;
+              font-size: 16px;
+              box-sizing: border-box;
+              outline: none;
+           &:focus{
+                  border: 1.8px solid #ffd91d;
+               }
+            }
+       }
+
+       .button_next{
+         border-radius: 10px;
+         height: 45px;
+         float: right;
+         width: 120px;
+         font-size: 16px;
+         font-family: Fira Sans Semibold;
+         outline: none;
+         display: block;
+         background-color: rgb(255, 141, 29);
+         border-color: rgb(255, 141, 29);
+         color: #FFFFFF;
+         border-style: solid;
+
+         &:focus,&:hover{
+          cursor: pointer;
+          border-width: 1.5px;
+          border-color: rgb(0, 0, 0);
+          background-color: #f0f0f0;
+          color: black;
+         }
+       }
+
+       .button_back{
+         border-width: 1.5px;
+         margin-right:15px;
+         border-color: rgb(0, 0, 0);
+         border-style: solid;
+         border-radius: 10px;
+      //   background-color: #f0f0f0;
+         height: 45px;
+         float: right;
+         width: 120px;
+         font-size: 16px;
+         font-family: Fira Sans Semibold;
+         outline: none;
+         display: block;
+
+         &:focus,&:hover{
+          cursor: pointer;
+          background-color: rgb(255, 141, 29);
+          border-color: rgb(255, 141, 29);
+          color: #FFFFFF;
+         }
+       }
+   }
+
+   .form input{
+     font-size: 14px;
+     font-family: Fira Sans;
+   }
+
+   ::placeholder{
+     font-size: 14px;
+     font-family: Fira Sans;
+    }
+
+}

@@ -1,8 +1,23 @@
 .BusPassPage{
-	min-height: 80vh;
+	min-height: 75vh;
 	display: grid;
 	justify-content: center;
-    margin: 40px;
-    
-      
+	color: rgb(250,250,250);
+//	margin-bottom: 45px;
+//	margin: 25px auto;
+
+	.stepsBox{
+		height: 590px;
+    width: 1000px;
+    display: grid;
+    justify-content: center;
+    color: black;
+    background-color: #cfcfcf;
+    font-family: Fira Sans medium;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+	}
+
+
 	}

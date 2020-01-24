@@ -1,5 +1,4 @@
 import React from 'react';
-import login from './login.png';
 import './header.styles.scss';
 
 const Header = () => (
@@ -9,7 +8,8 @@ const Header = () => (
           <span className='option'>HOME</span>
           <span className='option'>ROUTES</span>
           <span className='option'>ABOUT US</span>
-          <img className='option' src={login} alt='user' width='64px' height='64px'/>
+          <button className='button'>Sign In</button>
+
        </div>
      </div>
 	);
