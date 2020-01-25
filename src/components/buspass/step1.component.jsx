@@ -36,7 +36,7 @@ return (
 	<lable>Enrollment No.</lable>
 		<CustomInput
 		className='enroll'
-		type='text'
+		type='number'
 		name='Enrollment'
 		value={values.Enrollment}
 		onChange={handleChange('Enrollment')}
@@ -89,19 +89,23 @@ return (
 		</div><br/>
 		<div className='sem_mob'>
 			<lable>Semister</lable>
-			<CustomInput
-			className='sem'
-			type='number'
-			name='Semister'
-			value={values.Semister}
-			onChange={handleChange('Semister')}
-			placeholder='Semister'
-			required
-			/>
-     		<lable>Mobile No.</lable>
+			<select className='semister' value={values.Semister} onChange={handleChange('Semister')}>
+    <option value='' >--Semister--</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+</select>
+<lable>Mobile No.</lable>
 			<CustomInput
 			className='mobile'
-			type='number'
+			type='tel'
+			maxlength='10'
+			minlength='10'
 			name='Mobile'
 			value={values.Mobile}
 			onChange={handleChange('Mobile')}

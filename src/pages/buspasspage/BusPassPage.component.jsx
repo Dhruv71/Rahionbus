@@ -19,7 +19,7 @@ BranchCode : '',
 Semister : '',
 Mobile : '',
 Email : '',
-EmailError : true,
+
 }
 }
 //proceed to NEXT step
@@ -46,8 +46,7 @@ handleChange = name => event => {
               Enrollment,Semister,Mobile,EmailError } = this.state;
       const values = {FullName,BranchCode,BranchName,Email,CollegeName,CollegeCode,
               Enrollment,Semister,Mobile,EmailError } ; 
-      console.log(FullName);
-      console.log(EmailError);  
+      
       switch (step) {
        case 1:
                return(

@@ -9,7 +9,7 @@ const Header = () => (
           <Link to='/' className='optionh' >
           <span className='option'>HOME</span>
           </Link>
-          <span className='option'>ROUTES</span>
+        <a href='https://www.gsrtc.in/GSRTCOnline/preTrackMyBus.do' target='_blank' className='option'>ROUTES</a>
           <span className='option'>ABOUT US</span>
           <Link to='signin'>
           <button className='button'>Sign In</button>
