@@ -6,11 +6,6 @@ export class Step2 extends React.Component{
 constructor() {
 super();
 this.state =  {
-StartDate : '',
-EndDate : '',
-Source : '',
-Destination : '',
-Distance : ''
 };
 }
 
@@ -26,6 +21,7 @@ this.props.prevStep();
 }
 
 render() {
+  const {handleChange,values} = this.props;
 return (
 <div className='step2'>
   <span className='title'><h2>Documents verification</h2></span>
@@ -36,6 +32,8 @@ return (
       className='buspassDate'
       type='date'
       name='StartDate'
+      onChange={handleChange('StartDate')}
+      value={values.StartDate}
       required
       />
       <lable>End Date</lable>
@@ -43,6 +41,8 @@ return (
       className='buspassDate'
       type='date'
       name='EndDate'
+      value={values.EndDate}
+      onChange={handleChange('EndDate')}
       required
       />
     </div>
@@ -53,6 +53,8 @@ return (
       className='source_den'
       type='text'
       name='Source'
+      value={values.Source}
+      onChange={handleChange('Source')}
       placeholder='Source'
       required
       />
@@ -61,6 +63,8 @@ return (
       className='source_den'
       type='text'
       name='Destination'
+      onChange={handleChange('Destination')}
+      value={values.Destination}
       placeholder='Destination'
       required
       />
@@ -70,7 +74,9 @@ return (
     <CustomInput
     className='Distance'
     type='number'
-    name='Number'
+    name='Distance'
+    onChange={handleChange('Distance')}
+    value={values.Distance}
     placeholder='Distance'
     required
     />
