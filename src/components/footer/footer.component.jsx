@@ -13,6 +13,7 @@ class Footer  extends React.Component {
 
      this.state = {
      	email : '',
+      isSubscribed : false
      };
     }
 
@@ -21,7 +22,7 @@ class Footer  extends React.Component {
     	event.preventDefault();
     	this.setState({
         email : '',
-        emailError:''
+        isSubscribed : !this.state.isSubscribed 
           });
     };
 

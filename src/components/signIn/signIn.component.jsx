@@ -2,7 +2,33 @@ import React from 'react';
 import './signIn.styles.scss';
 import CustomInput from '../customInput/customInput.component';
 
-const SignIn = () => (
+class SignIn extends React.Component{
+ constructor(props)
+ {
+    super(props);
+
+    this.state = {
+    	email : '',
+    	password : ''
+    }
+ }
+
+  handleChange = name => e =>
+  { 
+  	
+  	this.setState({[name] : e.target.value} );
+
+  };
+
+  handelSubmit = e => 
+  {
+  	e.preventDefault();
+  	this.setState({email : '', password : ''});
+  }
+
+ render()
+ {
+ 	return(
       <div className='signinBody'>
 
       <div className='title'>
@@ -11,13 +37,14 @@ const SignIn = () => (
       </div>
 
       <div className='signIn'>
-       <form>
+       <form onSubmit={this.handelSubmit}>
        <label>Email</label>
        <CustomInput
          className='signinEmail'
          type='email'
          name='email'
-         //value={this.state.email}
+         value={this.state.email}
+         onChange = {this.handleChange('email')}
          placeholder='example@gmail.com'
          required
         /><br/>
@@ -27,7 +54,8 @@ const SignIn = () => (
         type='password'
         name='password'
         placeholder="Password"
-        //value={this.state.password}
+        value={this.state.password}
+        onChange = {this.handleChange('password')}
         required
        />
        <a href="#" className='forgetpass'> forget password?</a>
@@ -42,5 +70,6 @@ const SignIn = () => (
 
       </div>
 	);
-
+  }
+}
 export default SignIn;
