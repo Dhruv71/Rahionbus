@@ -22,62 +22,60 @@
           font-family: Gotham light;
           color: rgb(255,255,255);
           color: white;
-          
+
           .optionh{
-            margin: 15px 0;
+          //  margin: 15px 25px;;
             font-size: 16px;
-            
-          } 
-          
+          }
+
           .option{
             margin: 15px 25px;
           	cursor: pointer;
           	font-size: 16px;
             word-spacing: 2px;
           }
-           
-          .button{
-            margin: 15px 25px;
-            border-width: 1.2px;
-          //  border-color: white;
-            border-style: none;
-            border-radius: 12px;
-            height: 45px;
-            width: 80px;
-            font-size: 16px;
-            font-family: Fira Sans Semibold;
-            outline: none;
-            display: block;
-            background-color: #fafafa;
-            color: black;
 
+         }
 
+         .button{
+           margin: 15px 25px;
+           border-width: 1.2px;
+         //  border-color: white;
+           border-style: none;
+           border-radius: 12px;
+           height: 45px;
+           width: 80px;
+           font-size: 16px;
+           font-family: Fira Sans Semibold;
+           outline: none;
+           display: block;
+           background-color: #fafafa;
+           color: black;
 
-
-            &:hover{
-             cursor: pointer;
-             background-color: transparent;
-            color: white;
-            border-color: white;
-            border-style: solid;
-            border-width: 1.2px;
-            }
-          }
-
+           &:hover{
+            cursor: pointer;
+            background-color: transparent;
+           color: white;
+           border-color: white;
+           border-style: solid;
+           border-width: 1.2px;
+           }
          }
 
         .logo{
        	  font-size: 50px;
-       	  font-weight: 1000px;
-       	  margin-left: 140px;
+       	  margin-left: 125px;
        	  margin-top: 15px;
           font-family: Fira Sans Semibold;
-          color: rgb(255,255,255);
+          color: white;
        }
 
        }
-
 
 .options :hover{
   color: #ffb267;
+}
+
+.optionh:focus{
+  opacity: 0.6;
 }

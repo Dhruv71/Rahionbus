@@ -1,20 +1,21 @@
 .aboutUs{
-	
-	min-height: 50vh;
-	margin-top: 90px;
-h1{
+	width: 1200px;
+	justify-content: center;
+	text-align: left;
+//	margin-top: 300px;
+
+    h1{
          font-size: 36px;
-        // font-weight: 60px;
+         font-weight: 60px;
          border-bottom: 2px solid rgb(255, 141, 29);
          color: rgb(255, 141, 29);
          font-family: Fira Sans Semibold;
         }
 
         p{
-          margin-top: 12px;
           font-size: 22px;
           font-family: Fira Sans Light;
           word-spacing: 5px;
-
         }
-   }     
+
+}

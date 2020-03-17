@@ -4,7 +4,7 @@
         width: 100%;
         height: 320px;
         display: grid;
-        grid-template-columns: 650px 500px;
+        grid-template-columns: 700px 550px;
         grid-gap: 10px;
         background-color: rgb(255, 141, 29);
         justify-content: center;
@@ -26,8 +26,8 @@
              }
 
              ::placeholder {
-               color: #e9e9e9;
-               opacity: 0.9; /* Firefox */
+               color: white;
+               opacity: 0.6; /* Firefox */
                font-size: 14px;
                font-family: Fira Sans;
               }
@@ -48,10 +48,10 @@
               border-style: solid;
               border-radius: 10px;
               position: absolute;
-              margin-top: 15px;
+              margin-top: 25px;
               width: 100px;
               height: 45px;
-              font-size: 12px;
+              font-size: 14px;
               font-family: Fira Sans Semibold;
               outline: none;
               position: relative;
@@ -99,6 +99,7 @@
        margin-top: 40px;
 
 
+
         .logo{
           color: white;
           font-family: Fira Sans;
@@ -107,16 +108,19 @@
             font-size: 50px;
            }
            p{
-             font-size: 12px;
+             width: 500px;
+             margin-top: 10px;
+             font-size: 14px;
              font-family: Fira Sans light;
-             line-height: 1.5;
+             //line-height: 1.5;
+             word-spacing: 1px;
            }
            h5{
              margin-top: 20px;
              font-family: Fira Sans light;
            }
         }
-     }
+      }
 }
 
 

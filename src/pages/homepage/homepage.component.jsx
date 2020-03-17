@@ -63,7 +63,7 @@ return (
     <CardList/>
     <img src={shape5} alt='shape' className='shape5'/>
       <div className='about'>
-      <AboutUs />
+    <AboutUs />
       </div>
   </div>
     <img src={shape4} alt='shape' className='shape4'/>

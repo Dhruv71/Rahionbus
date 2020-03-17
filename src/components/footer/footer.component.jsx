@@ -39,7 +39,7 @@ class Footer  extends React.Component {
      <div className='logo'>
        <h1>GSRTC</h1>
        <p>GSRTC provide online bus pass service in Gujarat, also in this we provide Bus Routes, online book tickets.
-       Enjoy Fast, Secure and amazing service of GSRTC. This web site develop by RAHI GROUP.
+       Enjoy Fast, Secure and amazing service of GSRTC. This web site develop by RAHI GROUP. We inspire the future. 
           </p>
           <h5>© 2020 Rahi Group All Rights Recived</h5>
        </div>

@@ -6,6 +6,7 @@ import './BusPassPage.styles.scss';
 const KM = 7;
 
 class BusPassPage extends React.Component {
+
 constructor(){
   super();
 
@@ -47,11 +48,14 @@ prevStep = () => {
 handleChange = name => event => {
    this.setState({ [name] : event.target.value });
 }
+
   render() {
+
       const { step } = this.state;
       const {FullName,BranchCode,BranchName,Email,CollegeName,CollegeCode,
               Enrollment,Semister,Mobile,EmailError,StartDate,EndDate,Source,Destination,Distance } = this.state;
       const values = {FullName,BranchCode,BranchName,Email,CollegeName,CollegeCode,
+
               Enrollment,Semister,Mobile,EmailError,StartDate,EndDate,Source,Destination,Distance }; 
       
       switch (step) {
@@ -89,7 +93,7 @@ handleChange = name => event => {
          );
      }
 
-
   }
 }
+
 export default BusPassPage;
