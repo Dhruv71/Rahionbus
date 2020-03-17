@@ -119,7 +119,7 @@
                   border: 1.8px solid #ffd91d;
                }
             }
-           
+
          .mobile{
               border: 1.8px solid rgb(255, 141, 29);
               border-radius: 10px;
@@ -166,4 +166,21 @@
      font-family: Fira Sans;
     }
 
+    .shape5{
+       opacity: 40%;
+       position:absolute;
+       width: 195px;
+       height: 300px;
+       right: 0px;
+       top: 400px;
+       z-index: 1;
+       }
+
+       .shape4{
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: 203.5px;
+        height: 396px;
+        }
 }

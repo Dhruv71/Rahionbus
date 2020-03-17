@@ -1,6 +1,9 @@
 import React from 'react';
 import CustomInput from '../customInput/customInput.component';
 import './step1.styles.scss';
+import shape5 from '../../shape/shape5.png';
+import shape4 from '../../shape/shape4.png';
+
 export class Step1 extends React.Component{
 constructor() {
 super();
@@ -10,8 +13,8 @@ this.state =  {
 }
 
 handelSubmit = e => {
-e.preventDefault();   
-this.props.nextStep() 
+e.preventDefault();
+this.props.nextStep()
 };
 
 
@@ -19,7 +22,7 @@ render() {
 const { handleChange,values } = this.props;
 
 return (
-    
+
 <div className='step1'>
 	<span className='title'><h2>Personal Infomation</h2></span>
 	<form className='form' onSubmit={this.handelSubmit}>
@@ -122,10 +125,14 @@ return (
 		onChange={handleChange('Email')}
 		placeholder='example123@gmail.com'
 		required
-		/> 
+		/>
 		<button className="button" >Next</button>
 	</form>
+  <img src={shape5} alt='shape' className='shape5'/>
+  <img src={shape4} alt='shape' className='shape4'/>
 </div>
+
+
 );
 }
 }

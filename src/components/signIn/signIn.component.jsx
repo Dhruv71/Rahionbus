@@ -66,10 +66,13 @@ class SignIn extends React.Component{
       <div className='logo'>
         <h1>GSRTC</h1>
         <h6>Develop by Rahi Group</h6>
-        </div>
+      </div>
 
       </div>
+
 	);
   }
 }
+
+
 export default SignIn;

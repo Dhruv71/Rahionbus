@@ -1,16 +1,18 @@
 .SigninAndSignupPage{
-          position: relative;
-          min-height: 75vh;
-          margin: 25px auto;
-          margin-top: 90px;
-          margin-bottom: 45px;
+ display: grid;
+ justify-content: center;
+ background-color: #fafafa;
+ min-height: 120vh;
+          //margin: 25px auto;
 
+
+          //margin-bottom: 45px;
         .in_up_box{
          display: grid;
          justify-content: center;
          grid-template-columns: 500px 500px;
-         grid-column-gap: 50px;
-         padding: 10px;
+         grid-column-gap: 70px;
+         margin-top: 200px;
 
         }
 
@@ -20,13 +22,14 @@
            width: 195px;
            height: 300px;
            right: 0px;
-           top: 200px;
+           top: 400px;
            z-index: 1;
            }
 
            .shape4{
             position: absolute;
             left: 0;
+            top: 100px;
             width: 203.5px;
             height: 396px;
             }
