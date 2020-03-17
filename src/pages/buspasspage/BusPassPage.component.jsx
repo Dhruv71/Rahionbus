@@ -4,6 +4,7 @@ import Step2 from '../../components/buspass/step2.component';
 import './BusPassPage.styles.scss';
 
 class BusPassPage extends React.Component {
+
 constructor(){
   super();
 
@@ -40,13 +41,16 @@ prevStep = () => {
 handleChange = name => event => {
    this.setState({ [name] : event.target.value });
 }
+
   render() {
+
       const { step } = this.state;
       const {FullName,BranchCode,BranchName,Email,CollegeName,CollegeCode,
               Enrollment,Semister,Mobile,EmailError } = this.state;
       const values = {FullName,BranchCode,BranchName,Email,CollegeName,CollegeCode,
-              Enrollment,Semister,Mobile,EmailError } ; 
-      
+              Enrollment,Semister,Mobile,EmailError } ;
+
+
       switch (step) {
        case 1:
                return(
@@ -75,7 +79,7 @@ handleChange = name => event => {
          return <h1>welcome to secure payment!</h1>
      }
 
-
   }
 }
+
 export default BusPassPage;
