@@ -18,7 +18,7 @@ class  App extends React.Component {
         <Route path='/signin' component={SigninAndSignupPage} />
         <Route path='/buspass' component={BusPassPage} />
         <Route path='/aboutus' component={AboutUs}/>
-        <Footer/>
+        <Footer className='foot'/>
        </div>
 
   	);
