@@ -1,5 +1,6 @@
 import React from 'react';
 import './signIn.styles.scss';
+import isEmail from 'validator/lib/isEmail';
 import CustomInput from '../customInput/customInput.component';
 
 class SignIn extends React.Component{
@@ -23,6 +24,17 @@ class SignIn extends React.Component{
   handelSubmit = e => 
   {
   	e.preventDefault();
+  	const {email,password} = this.state;
+  	if(!isEmail(email))
+  	{
+       alert("please enter email in valid form");
+       return;
+  	}
+  	else if (password.length < 8 ) 
+  	{
+  		alert("please enter strong password of 8 character,symbol and number!");
+  		return;
+  	}
   	this.setState({email : '', password : ''});
   }
 

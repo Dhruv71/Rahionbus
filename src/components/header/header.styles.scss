@@ -34,7 +34,10 @@
           	font-size: 16px;
             word-spacing: 2px;
           }
-
+          .optionh-active{
+            opacity: 50%;
+            background-color:green;
+          }
          }
 
          .button{
@@ -76,6 +79,3 @@
   color: #ffb267;
 }
 
-.optionh:focus{
-  opacity: 0.6;
-}

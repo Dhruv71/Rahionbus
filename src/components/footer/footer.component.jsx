@@ -3,6 +3,7 @@ import CustomInput from '../customInput/customInput.component';
 import link from './icon/facebook.png';
 import google from './icon/google+.png';
 import facebook from './icon/linkedin.png';
+import isEmail from 'validator/lib/isEmail';
 import twitter from './icon/twitter.png';
 import './footer.style.scss';
 
@@ -20,6 +21,12 @@ class Footer  extends React.Component {
 
     handelSubmit = event => {
     	event.preventDefault();
+    if (!isEmail(this.state.email)) 
+       {
+        alert("please enter valid email");
+        return;
+       }
+
     	this.setState({
         email : '',
         isSubscribed : !this.state.isSubscribed 

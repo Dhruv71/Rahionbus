@@ -10,10 +10,20 @@ this.state =  {
 }
 
 continue = e => {
-e.preventDefault();
+
 this.props.nextStep();
 
 };
+handleSubmit = event =>
+{ event.preventDefault();
+  const {StartDate,EndDate} = this.props.values;
+  if ((Date.parse(EndDate) <= Date.parse(StartDate))) 
+  {
+    alert("endDate should be greater than startingDate ");
+    return;
+  } 
+  this.continue();
+}
 
 back = e => {
 e.preventDefault();
@@ -25,7 +35,7 @@ render() {
 return (
 <div className='step2'>
   <span className='title'><h2>Documents verification</h2></span>
-  <form className='form' onSubmit={this.continue}>
+  <form className='form' onSubmit={this.handleSubmit} >
     <div className='date'>
       <lable>Start Date</lable>
       <CustomInput

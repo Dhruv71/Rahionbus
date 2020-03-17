@@ -21,7 +21,7 @@ BranchName : '',
 BranchCode : '',
 Semister : '',
 Mobile : '',
-Email : '',
+email : '',
 StartDate : '',
 EndDate : '',
 Source : '',
@@ -52,11 +52,11 @@ handleChange = name => event => {
   render() {
 
       const { step } = this.state;
-      const {FullName,BranchCode,BranchName,Email,CollegeName,CollegeCode,
-              Enrollment,Semister,Mobile,EmailError,StartDate,EndDate,Source,Destination,Distance } = this.state;
-      const values = {FullName,BranchCode,BranchName,Email,CollegeName,CollegeCode,
+      const {FullName,BranchCode,BranchName,email,CollegeName,CollegeCode,
+              Enrollment,Semister,Mobile,StartDate,EndDate,Source,Destination,Distance } = this.state;
+      const values = {FullName,BranchCode,BranchName,email,CollegeName,CollegeCode,
 
-              Enrollment,Semister,Mobile,EmailError,StartDate,EndDate,Source,Destination,Distance }; 
+              Enrollment,Semister,Mobile,StartDate,EndDate,Source,Destination,Distance }; 
       
       switch (step) {
        case 1:

@@ -1,6 +1,8 @@
 import React from 'react';
 import CustomInput from '../customInput/customInput.component';
 import './step1.styles.scss';
+import isEmail from 'validator/lib/isEmail';
+import isInt from 'validator/lib/isInt';
 import shape5 from '../../shape/shape5.png';
 import shape4 from '../../shape/shape4.png';
 
@@ -14,6 +16,32 @@ this.state =  {
 
 handelSubmit = e => {
 e.preventDefault();
+const {Enrollment,CollegeCode,BranchCode,Mobile,email} = this.props.values;
+if (Enrollment.length < 12 || Enrollment.length > 12 ) 
+{
+	alert("enter a valid 12 digit Enrollment ");
+	return;
+}
+else if (CollegeCode.length < 4 || CollegeCode.length > 4) 
+{
+	alert("enter a CollegeCode of 4 digit");
+	return;
+}
+else if (BranchCode.length < 2 || BranchCode.length > 2) 
+{
+	alert("enter a BranchCode of 2 digits");
+	return;
+}
+else if (!isInt(Mobile,{min : 1111111111, max: 9999999999}))
+{
+  alert("enter mobile_no of valid digits only");
+  return;
+}
+else if (!isEmail(email)) 
+{
+	alert("enter email in valid form");
+	return;
+}
 this.props.nextStep()
 };
 
@@ -120,9 +148,9 @@ return (
 		<CustomInput
 		className='email'
 		type='email'
-		name='Email'
-		value={values.Email}
-		onChange={handleChange('Email')}
+		name='email'
+		value={values.email}
+		onChange={handleChange('email')}
 		placeholder='example123@gmail.com'
 		required
 		/>
