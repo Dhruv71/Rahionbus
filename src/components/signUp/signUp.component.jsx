@@ -42,7 +42,7 @@ handleChange = e =>
   	 	return;
   	 }
 
-   else if(password != confirmpassword)
+   else if(password !== confirmpassword)
   	{
   		alert("password does not match! please enter valid password");
   		return;
